@@ -57,19 +57,30 @@ namespace API
         {
             if (env.IsDevelopment())
             {
+                app.UseDeveloperExceptionPage();
+            
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
             }
 
             //app.UseHttpsRedirection();
-
             app.UseRouting();
+            app.UseStaticFiles();
              
             app.UseCors("CorsPolicy");
 
             app.UseRouting();
-            //app.UseAuthentication();
+            
             app.UseAuthorization();
+            //app.UseAuthentication();
+
+             app.UseStaticFiles();
+
+
+        app.UseForwardedHeaders(new ForwardedHeadersOptions
+        {
+            
+        });
 
             app.UseEndpoints(endpoints =>
             {
