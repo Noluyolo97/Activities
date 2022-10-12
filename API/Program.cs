@@ -17,25 +17,25 @@ namespace API
     {
         public static async Task Main(string[] args)
         {
-            var host=CreateHostBuilder(args).Build();
+            var host = CreateHostBuilder(args).Build();
+
             using var scope = host.Services.CreateScope();
 
             var services = scope.ServiceProvider;
 
-            try
+            try 
             {
-                 var context = services.GetRequiredService<DataContext>();
+                var context = services.GetRequiredService<DataContext>();
                 await context.Database.MigrateAsync();
                 await Seed.SeedData(context);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 var logger = services.GetRequiredService<ILogger<Program>>();
-               logger.LogError(ex,"Error occured during migration");
+                logger.LogError(ex, "An error occured during migraiton");
             }
 
-           await host.RunAsync();
-
+            await host.RunAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

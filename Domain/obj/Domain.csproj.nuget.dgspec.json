@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NNdungane\\Desktop\\Activities\\Domain\\Domain.csproj": {}
+    "C:\\Users\\NNdungane\\Desktop\\Activities-2\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NNdungane\\Desktop\\Activities\\Domain\\Domain.csproj": {
+    "C:\\Users\\NNdungane\\Desktop\\Activities-2\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NNdungane\\Desktop\\Activities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\NNdungane\\Desktop\\Activities-2\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\NNdungane\\Desktop\\Activities\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\NNdungane\\Desktop\\Activities-2\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\NNdungane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NNdungane\\Desktop\\Activities\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\NNdungane\\Desktop\\Activities-2\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NNdungane\\AppData\\Roaming\\NuGet\\NuGet.Config",
